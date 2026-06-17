@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anushka Pandey — Biotechnology and Systems Biology researcher. Writing on immunology, epigenetics, circadian biology, and the edges of what we know." />
+  <title>Anushka Pandey</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav>
+    <a href="/" class="nav-name">Anushka Pandey</a>
+    <ul class="nav-links">
+      <li><a href="#thinking">thinking</a></li>
+      <li><a href="#research">research</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#thinking" onclick="toggleMenu()">thinking</a>
+    <a href="#research" onclick="toggleMenu()">research</a>
+    <a href="#contact" onclick="toggleMenu()">contact</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <p class="eyebrow"><span class="dot"></span>Biotechnology &amp; Integrated Systems Biology · Amrita Vishwa Vidyapeetham</p>
+    <h1 class="hero-name">Biology at the<br>edge of <em>what we know.</em></h1>
+
+    <div class="thinking-line">
+      <span class="thinking-label">currently thinking about —&nbsp;</span>
+      <div class="rotating-wrap">
+        <span class="rotating-text" id="rotating"></span>
+      </div>
+    </div>
+
+    <p class="hero-bio">
+      Third-year undergraduate researcher working at the intersection of
+      <strong>immunology, epigenetics, and systems biology.</strong>
+      I'm less interested in generating data than in understanding what question the data is actually answering.
+      <strong>Khorana Scholar 2025</strong>, University of Chicago Medicine.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#thinking" class="btn-primary">Read my writing</a>
+      <a href="mailto:anushka.mpandey03@gmail.com" class="btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ============ INTERESTS ============ -->
+  <section class="section">
+    <p class="section-label">research interests</p>
+    <div class="interests-grid">
+      <div class="interest-cell">
+        <p class="interest-topic">Circadian Immunology</p>
+        <p class="interest-sub">How biological clocks shape immune function, tumour infiltration, and therapy response windows.</p>
+      </div>
+      <div class="interest-cell">
+        <p class="interest-topic">Epigenetic AMR</p>
+        <p class="interest-sub">Host-directed therapeutics targeting antimicrobial resistance through epigenetic modulation.</p>
+      </div>
+      <div class="interest-cell">
+        <p class="interest-topic">Immunological Aging</p>
+        <p class="interest-sub">Why the immune system ages faster than the body — and what that means for everything else.</p>
+      </div>
+      <div class="interest-cell">
+        <p class="interest-topic">Dark Proteome</p>
+        <p class="interest-sub">Intrinsically disordered proteins and their role in immune regulation and disease.</p>
+      </div>
+      <div class="interest-cell">
+        <p class="interest-topic">Neuroplasticity</p>
+        <p class="interest-sub">Where immune and nervous systems converge — microglia, synaptic pruning, neuroimmunology.</p>
+      </div>
+      <div class="interest-cell">
+        <p class="interest-topic">Systems Biology</p>
+        <p class="interest-sub">Using computational and quantitative approaches to ask bigger biological questions.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ============ WRITING ============ -->
+  <section class="section" id="thinking">
+    <p class="section-label">thinking out loud</p>
+    <p class="section-sub">Short writing on biology, science, and the questions that don't have clean answers yet.</p>
+
+    <div class="writing-stack">
+
+      <article class="post-card">
+        <div class="post-body">
+          <p class="post-tag">Circadian Immunology</p>
+          <h2 class="post-title">Your immune system runs on a clock. Surgery knows this. Science is starting to.</h2>
+          <p class="post-preview">Complication rates differ measurably depending on when a procedure is scheduled. We've known this empirically for years. We're only now understanding the molecular mechanism — and it points directly to how circadian disruption in tumour microenvironments changes which immune cells show up, and when.</p>
+          <p class="post-date">June 2026</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-body">
+          <p class="post-tag">Epigenetics &amp; AMR</p>
+          <h2 class="post-title">Bacteria don't just evolve resistance. Sometimes they borrow it — without touching their DNA.</h2>
+          <p class="post-preview">Epigenetic AMR is the version of antimicrobial resistance nobody is talking about loudly enough. Tolerance acquired without mutation, heritable within a generation, reversible in theory. The implications for how we design host-directed therapies are significant — and largely unexplored.</p>
+          <p class="post-date">May 2026</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-body">
+          <p class="post-tag">Aging Biology</p>
+          <h2 class="post-title">The immune system ages faster than most organs. And when it does, so does everything else.</h2>
+          <p class="post-preview">Immunosenescence isn't simply about fewer T cells. It's about the quality of immune memory — whether the system can still distinguish self from non-self reliably. The oldest confirmed human had an anomalous immune profile at 115. We've never been able to replicate what she had.</p>
+          <p class="post-date">April 2026</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-body">
+          <p class="post-tag">Dark Proteome</p>
+          <h2 class="post-title">30% of human proteins have no known structure. That's not a gap in biology — it's a gap in our tools.</h2>
+          <p class="post-preview">We call them intrinsically disordered proteins. They are overrepresented in cancer, neurodegeneration, and immune regulation. AlphaFold largely sidesteps them. The darkness is ours, not theirs — and it's where some of the most interesting biology is hiding.</p>
+          <p class="post-date">March 2026</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-body">
+          <p class="post-tag">Neuroplasticity</p>
+          <h2 class="post-title">The brain loses synapses during sleep. On purpose. Forgetting is a feature, not a failure.</h2>
+          <p class="post-preview">Synaptic pruning during sleep is how the brain consolidates what matters and discards what doesn't. Microglia — the brain's resident immune cells — are involved. Which means the story of memory is also, in part, an immunology story. The two fields are converging in places nobody expected.</p>
+          <p class="post-date">February 2026</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ============ RESEARCH ============ -->
+  <section class="section" id="research">
+    <p class="section-label">research</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2026 –<br>present</div>
+        <div class="timeline-content">
+          <p class="timeline-title">Epigenetic mechanisms in antimicrobial resistance</p>
+          <p class="timeline-where">Dr. Aravind Madhavan's Lab · Amrita Vishwa Vidyapeetham, Kerala</p>
+          <p class="timeline-detail">Investigating host-directed therapeutic strategies targeting AMR through epigenetic modulation. Contributing to study design, experimental execution, and literature analysis.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2025</div>
+        <div class="timeline-content">
+          <p class="timeline-title">Circadian disruption and immune infiltration in cancer</p>
+          <p class="timeline-where">Dr. Akash Patnaik Lab · University of Chicago Medicine Comprehensive Cancer Centre</p>
+          <p class="timeline-detail">Designed and proposed an independent research project on circadian rhythm disruption and immune infiltration in prostate and ovarian cancer mouse models. In vivo techniques, multi-parameter flow cytometry for TIL profiling, grant proposal contribution.</p>
+          <span class="badge">Khorana Scholar 2025</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2023 –</div>
+        <div class="timeline-content">
+          <p class="timeline-title">B.Sc. (Honours) Biotechnology and Integrated Systems Biology</p>
+          <p class="timeline-where">Amrita Vishwa Vidyapeetham · CGPA 9.2</p>
+          <p class="timeline-detail">Wet lab: flow cytometry, qPCR, Western blot, ELISA, mammalian cell culture, ChIP-seq. Dry lab: R, Python, FlowJo, GraphPad Prism, ImageJ, Cytoscape.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contact">
+    <div class="footer-left">
+      <p class="footer-name">Anushka Pandey</p>
+      <p class="footer-sub">Rajasthan, India · Open to dissertation placements from January 2027</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:anushka.mpandey03@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/anushka-pandey" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="cv.pdf" target="_blank">CV</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
