@@ -1,0 +1,139 @@
+/* ============================================
+   POST PAGE STYLES
+   post.css — imported on individual post pages
+   ============================================ */
+
+.post-main {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 5rem;
+}
+
+/* ---- Meta row ---- */
+.post-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.back-link {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+.back-link:hover { color: var(--accent); }
+
+.post-meta-tag {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  background: var(--accent-light);
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+/* ---- Heading ---- */
+.post-heading {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(26px, 5vw, 40px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+}
+
+/* ---- Post info ---- */
+.post-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.post-info-date,
+.post-info-read {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+.post-info-dot {
+  color: var(--border);
+  font-size: 14px;
+}
+
+/* ---- Body content ---- */
+.post-body-content {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--text);
+  font-weight: 300;
+}
+
+.post-body-content p {
+  margin-bottom: 1.6rem;
+  color: #2A2A28;
+}
+
+.post-body-content p:last-child {
+  margin-bottom: 0;
+}
+
+.post-body-content em {
+  font-style: italic;
+  color: var(--text);
+}
+
+.post-body-content strong {
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* ---- Blockquote — pulled key idea ---- */
+.post-body-content blockquote {
+  margin: 2.25rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-light);
+  border-radius: 0 8px 8px 0;
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+/* ---- Footer nav ---- */
+.post-footer-nav {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 0.5px solid var(--border);
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 680px) {
+  .post-main {
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  .post-body-content {
+    font-size: 15px;
+  }
+
+  .post-body-content blockquote {
+    font-size: 16px;
+    padding: 1rem 1.25rem;
+  }
+}
