@@ -136,4 +136,29 @@
     font-size: 16px;
     padding: 1rem 1.25rem;
   }
+   /*----Image----*/
+   .post-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  filter: grayscale(15%);
+}
+  .image-credit {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: -2rem;
+  margin-bottom: 2.5rem;
+  text-align: right;
+}
+
+.image-credit a {
+  color: var(--muted);
+  text-decoration: underline;
+}
+
+.image-credit a:hover {
+  color: var(--accent);
+} 
 }
