@@ -76,10 +76,9 @@
 }
 
 .post-info-dot {
-  color: var(--border);
+  color: #000000;
   font-size: 14px;
 }
-
 /* ---- Body content ---- */
 .post-body-content {
   font-size: 16px;
