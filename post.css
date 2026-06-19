@@ -7,6 +7,11 @@
   max-width: 660px;
   margin: 0 auto;
   padding: 3.5rem 2rem 5rem;
+  background-image: linear-gradient(rgba(245,243,238,0.94), rgba(245,243,238,0.97)), url('PASTE_YOUR_IMAGE_URL_HERE');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 12px;
 }
 
 /* ---- Meta row ---- */
@@ -73,11 +78,11 @@
 }
 
 /* ---- Body content ---- */
-.post-body-content {
-  font-size: 16px;
-  line-height: 1.9;
-  color: var(--text);
-  font-weight: 300;
+.post-body-content p {
+  margin-bottom: 1.6rem;
+  color: #2A2A28;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .post-body-content p {
